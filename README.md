@@ -1,8 +1,8 @@
 ## Real Time ASCII video converter
 
 ### Demo
-
-* This Demo was shot live (No Arjun's were harmed while recording)
+https://user-images.githubusercontent.com/80504466/179368698-8be66942-475a-4ede-8394-251b4ac9a9f9.mp4
+* This Demo was shot live (No Arjuns were harmed while recording)
 
 ### How it Works
 ![How it Works](assets/howItWorks.jpg)
