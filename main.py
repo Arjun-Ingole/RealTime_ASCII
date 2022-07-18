@@ -6,6 +6,8 @@ PATH = 'frame.jpg'
 
 def main():
     video = cv2.VideoCapture(0)
+    video.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
+    video.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
     while True:
         ret, frame = video.read()
         frame = cv2.flip(frame, 1)
