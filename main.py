@@ -1,6 +1,7 @@
 import os, cv2, sys
-from PIL import Image
+from PIL import Image, ImageEnhance
 
+FACTOR = 1.5 # Contrast Factor
 GSCALE = "@#+~-` "   # 7 Levels of depth, 37 per character
 PATH = 'frame.jpg'
 
@@ -24,6 +25,10 @@ def ConvertToASCII():
     img = Image.open(PATH)
     img = img.resize((100, 40))
     img = img.convert('L')
+
+    # Increase image contrast
+    contrast = ImageEnhance.Contrast(img)
+    img = contrast.enhance(FACTOR)
 
     # Get image data according greyscale
     pixels = img.getdata()
